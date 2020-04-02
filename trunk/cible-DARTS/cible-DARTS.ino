@@ -46,7 +46,8 @@ void setup()
   pinMode(interrupteur, INPUT_PULLUP); //utiliser pour mettre en pause le temps de recuperer les flechettes
   
   Serial.print("cible initialiser\n");
-  Serial.print("$DART;START;301;1;2\r\n");
+  delay(100);
+  Serial.print("$DART;START;301;0;2\r\n");
 }
 
 void loop()
