@@ -816,3 +816,22 @@ void Ihm::on_boutonRegle_clicked()
 {
     transmission->envoyerDonnees("$DART;REGLE\r\n");
 }
+
+void Ihm::on_pushButtonPartiTournois_clicked()
+{
+    transmission->envoyerDonnees("$DART;TOURNOIS;PLAY\r\n");
+}
+
+void Ihm::on_pushButtonInitialiserTournois_clicked()
+{
+    QString typeJeu = "";
+    if(ui->spinBoxTypeJeuTournois->text() == "2")
+    {
+        typeJeu = "_DOUBLE_OUT";
+    }
+    else {
+        typeJeu = "";
+    }
+    qDebug() << "trame demarrage" << "$DART;START;"+ ui->nbPointjeu->text() + typeJeu + ";" + ui->demarrerNbjoueur->text() + "\r\n" << endl;
+    transmission->envoyerDonnees("$DART;TOURNOIS;CONFIG"+ ui->spinBoxnbPointTournois->text() + typeJeu + ";" + ui->lineEditNomTournois->text() + ";" + ui->spinBoxNbPersonneTournois->text() + ";" + ui->lineEditNomTournoisPerso->text() + "\r\n");
+}

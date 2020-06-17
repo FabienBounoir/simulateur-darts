@@ -102,6 +102,7 @@ private:
     QSerialPort *portSonde;                 //!< objet portSonde
     QSerialPort *portGps;                   //!< objet portGps
     QBluetoothDeviceDiscoveryAgent *scan;   //!< objet scan
+    QBluetoothLocalDevice localDevice;
     QLowEnergyController *m_controller;     //!< objet m_controller
     QBluetoothSocket *socket;               //!< objet socket
 
