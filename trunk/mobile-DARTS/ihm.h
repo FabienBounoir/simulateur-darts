@@ -107,6 +107,10 @@ private slots:
 
     void on_boutonRegle_clicked();
 
+    void on_pushButtonPartiTournois_clicked();
+
+    void on_pushButtonInitialiserTournois_clicked();
+
 private:
     Ui::Ihm *ui;                                    //!< objet Ihm
     Transmission* transmission;                     //!< objet transmission

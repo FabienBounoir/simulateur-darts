@@ -27,6 +27,7 @@ Transmission::Transmission(QObject *parent) : QObject(parent), trame(""), trameG
     portGps = new QSerialPort(this);
     scan = new QBluetoothDeviceDiscoveryAgent(this);
     socket = new QBluetoothSocket(QBluetoothServiceInfo::RfcommProtocol);
+    localDevice.powerOn();
 
     connect(scan, SIGNAL(deviceDiscovered(QBluetoothDeviceInfo)), this, SLOT(ajouterAppareil(QBluetoothDeviceInfo)));
     connect(scan, SIGNAL(finished()), this, SLOT(scanTerminer()));
