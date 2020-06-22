@@ -11,7 +11,7 @@
 #include <QApplication>
 
 #define MODE_OPERATEUR_ACTIVER 2
-#define ONGLET_MODE_OPERATEUR 2
+#define ONGLET_MODE_OPERATEUR 25
 #define LED_ROUGE "../Sonde/image/ledRouge.png"
 #define LED_VERT "../Sonde/image/ledVert.png"
 #define LED_ORANGE "../Sonde/image/ledOrange.png"
