@@ -447,7 +447,7 @@ void Ihm::on_pushButtonEnvoyerTrame_clicked()
 {
     if(ui->lineEditEnvoyerTrame->text() != "")
     {
-        transmission->envoyerDonnees(ui->lineEditEnvoyerTrame->text());
+        transmission->envoyerDonnees(ui->lineEditEnvoyerTrame->text() + "\r\n");
     }
 }
 
@@ -833,5 +833,5 @@ void Ihm::on_pushButtonInitialiserTournois_clicked()
         typeJeu = "";
     }
     qDebug() << "trame demarrage" << "$DART;START;"+ ui->nbPointjeu->text() + typeJeu + ";" + ui->demarrerNbjoueur->text() + "\r\n" << endl;
-    transmission->envoyerDonnees("$DART;TOURNOIS;CONFIG"+ ui->spinBoxnbPointTournois->text() + typeJeu + ";" + ui->lineEditNomTournois->text() + ";" + ui->spinBoxNbPersonneTournois->text() + ";" + ui->lineEditNomTournoisPerso->text() + "\r\n");
+    transmission->envoyerDonnees("$DART;TOURNOIS;CONFIG;"+ ui->spinBoxnbPointTournois->text() + typeJeu + ";" + ui->lineEditNomTournois->text() + ";" + ui->spinBoxNbPersonneTournois->text() + ";" + ui->lineEditNomTournoisPerso->text() + "\r\n");
 }
