@@ -28,7 +28,7 @@
         <bool>true</bool>
        </property>
        <property name="currentIndex">
-        <number>6</number>
+        <number>3</number>
        </property>
        <widget class="QWidget" name="Donnees">
         <property name="enabled">
@@ -489,7 +489,7 @@
              <property name="leftMargin">
               <number>5</number>
              </property>
-             <item row="7" column="1">
+             <item row="10" column="1">
               <widget class="QPushButton" name="STOP">
                <property name="font">
                 <font>
@@ -576,7 +576,7 @@
                </property>
               </widget>
              </item>
-             <item row="7" column="0">
+             <item row="10" column="0">
               <widget class="QPushButton" name="PLAY">
                <property name="font">
                 <font>
@@ -605,7 +605,7 @@
                </property>
               </widget>
              </item>
-             <item row="3" column="0">
+             <item row="6" column="0">
               <widget class="QLabel" name="label">
                <property name="font">
                 <font>
@@ -662,7 +662,7 @@
                </property>
               </widget>
              </item>
-             <item row="4" column="2" colspan="2">
+             <item row="7" column="2" colspan="2">
               <widget class="QSpinBox" name="nbPoint">
                <property name="font">
                 <font>
@@ -674,7 +674,7 @@
                </property>
               </widget>
              </item>
-             <item row="4" column="0" colspan="2">
+             <item row="7" column="0" colspan="2">
               <widget class="QSpinBox" name="typePoint">
                <property name="font">
                 <font>
@@ -688,7 +688,7 @@
                </property>
               </widget>
              </item>
-             <item row="3" column="2">
+             <item row="6" column="2">
               <widget class="QLabel" name="label_2">
                <property name="font">
                 <font>
@@ -705,7 +705,7 @@
                </property>
               </widget>
              </item>
-             <item row="5" column="0" colspan="4">
+             <item row="8" column="0" colspan="4">
               <widget class="QPushButton" name="EnvoyerImpact">
                <property name="font">
                 <font>
@@ -718,7 +718,7 @@
                </property>
               </widget>
              </item>
-             <item row="7" column="3">
+             <item row="10" column="3">
               <widget class="QPushButton" name="PAUSE">
                <property name="font">
                 <font>
@@ -730,14 +730,14 @@
                </property>
               </widget>
              </item>
-             <item row="9" column="0" colspan="4">
+             <item row="12" column="0" colspan="4">
               <widget class="QPushButton" name="pushButton">
                <property name="text">
                 <string>TRAME RESET</string>
                </property>
               </widget>
              </item>
-             <item row="12" column="0" colspan="4">
+             <item row="15" column="0" colspan="4">
               <widget class="QPushButton" name="TrameAleatoire">
                <property name="font">
                 <font>
@@ -750,7 +750,7 @@
                </property>
               </widget>
              </item>
-             <item row="7" column="2">
+             <item row="10" column="2">
               <widget class="QPushButton" name="boutonRegle">
                <property name="font">
                 <font>
@@ -771,7 +771,7 @@
                </property>
               </widget>
              </item>
-             <item row="6" column="0" colspan="4">
+             <item row="9" column="0" colspan="4">
               <spacer name="verticalSpacer">
                <property name="orientation">
                 <enum>Qt::Vertical</enum>
@@ -784,7 +784,7 @@
                </property>
               </spacer>
              </item>
-             <item row="8" column="0" colspan="4">
+             <item row="11" column="0" colspan="4">
               <spacer name="verticalSpacer_3">
                <property name="orientation">
                 <enum>Qt::Vertical</enum>
@@ -797,7 +797,7 @@
                </property>
               </spacer>
              </item>
-             <item row="10" column="0" colspan="4">
+             <item row="13" column="0" colspan="4">
               <spacer name="verticalSpacer_2">
                <property name="orientation">
                 <enum>Qt::Vertical</enum>
@@ -809,6 +809,20 @@
                 </size>
                </property>
               </spacer>
+             </item>
+             <item row="4" column="0" colspan="4">
+              <widget class="QLineEdit" name="lineEditJoueurPerso">
+               <property name="text">
+                <string>Fabien;Thierry;Lea;Florent;Jean;Paul;Julia;Baptiste</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="4">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Nom Joueur Personnalisé</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
