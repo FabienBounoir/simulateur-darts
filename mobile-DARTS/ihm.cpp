@@ -788,7 +788,7 @@ void Ihm::on_demarrerPartie_clicked()
         typeJeu = "";
     }
     qDebug() << "trame demarrage" << "$DART;START;"+ ui->nbPointjeu->text() + typeJeu + ";" + ui->demarrerNbjoueur->text() + "\r\n" << endl;
-    transmission->envoyerDonnees("$DART;START;"+ ui->nbPointjeu->text() + typeJeu + ";" + ui->Regle->text() + ";" +ui->demarrerNbjoueur->text() + ";\r\n");
+    transmission->envoyerDonnees("$DART;START;"+ ui->nbPointjeu->text() + typeJeu + ";" + ui->Regle->text() + ";" +ui->demarrerNbjoueur->text() + ";" + ui->lineEditJoueurPerso->text() + ";\r\n");
 }
 
 void Ihm::on_STOP_clicked()
